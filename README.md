@@ -54,9 +54,13 @@ WHEN I am prompted forthe new team member's email
 
 THEN I can enter the email of the new team member
 
-WHEN I am prompted for the new team member's GitHub username
+WHEN I am prompted for the new team member's GitHub username if they are an Engineer
 
 THEN I can enter the GitHub username of the new team member
+
+WHEN I am prompted for the new team member's School attended if they are an Intern
+
+THEN I can enter the name of the School they attend
 
 WHEN I enter that I don't want to add any more team members
 
