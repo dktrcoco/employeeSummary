@@ -1,9 +1,18 @@
-const Employee = require("./lib/Employee");
+//this pulls in the class Employee, which Engineer inherits data from
+const Employee = require("./Employee");
 
-// TODO: Write code to define and export the Manager class. HINT: This class should inherit from Employee.
-class Manager {
-    constructor() {
-        
+class Manager extends Employee {
+    //the constructor needs all the variables, even the ones that are inherited
+    constructor(name, id, email, officeNumber) {
+        super(name, id, email); //stuff inherited from Employee
+        this.officeNumber = officeNumber; //only the manager has an office
+    }
+    //functions need to be outside of the constructor
+    getOfficeNumber() {
+        return this.officeNumber;
+    }
+    getRole() {
+        return "Manager";
     }
 }
 
