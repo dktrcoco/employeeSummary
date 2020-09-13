@@ -68,15 +68,33 @@ THEN the node interface concludes
 
 WHEN a new team member is added like above
 
-THEN an employee info card is created and populated on an html
+THEN an employee info card is created and populated on an html file
+
+WHEN I choose the 'I'm done' option
+
+THEN the node interface terminates and the final html file is generated in the output folder
 
 ## Images
 
+Fig. 1: Node Initial Input, At Choice Prompt
+
+![Node Choice](/Develop/NodeChoice.PNG)
+
+Fig. 2: Node Input Final, Choices Complete
+
+![Node Choices Complete](/Develop/NodeFinal.PNG)
+
 ## Install
+
+You need to run npm install prior to ensure you have the dependencies (inquirer, jest for testing) installed
 
 ## Contribution
 
+If you have any contribution ideas of thoughts, please contact me via email (chris.kabana@gmail.com)
+
 ## Testing
+
+When you are using this app, test it using Node in the command line (I used Git Bash)
 
 ## Questions
 
